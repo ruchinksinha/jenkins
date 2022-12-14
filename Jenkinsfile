@@ -25,7 +25,7 @@ pipeline {
                         docker.withRegistry("https://registry.app.corpintra.net") {
                             kong_harbor.pull();
                         }
-                        sh 'docker tag registry.app.corpintra.net/oneapi/kong-oneapi:2.8.1-2.4.0 fusoeca.azurecr.io/kong-oneapi:2.8.1-2.4.0'
+                        sh 'docker tag registry.app.corpintra.net/oneapi/kong-oneapi:2.8.1-2.6.0 fusoeca.azurecr.io/kong-oneapi:2.8.1-2.6.0'
                         
                         docker.withRegistry("https://fusoeca.azurecr.io", "fusoeca") {
                             kong_azure.push()

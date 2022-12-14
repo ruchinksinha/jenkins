@@ -1,4 +1,5 @@
-def kong_harbor = docker.image('oneapi/kong-oneapi:2.8.1-2.4.0');
+#def kong_harbor = docker.image('oneapi/kong-oneapi:2.8.1-2.4.0');
+def kong_harbor = docker.image('oneapi/kong-oneapi:latest');
 def kong_azure = docker.image('fusoeca.azurecr.io/kong-oneapi:2.8.1-2.4.0');
 pipeline {
     options {
